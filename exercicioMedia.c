@@ -1,9 +1,10 @@
-/* 	Crie um programa na linguagem C o qual tenha como entrada dois valores iniciais: as notas das duas provas de um aluno. Caso a média desses valores seja igual a 10, 
-apresente na tela: "Discente aprovado com louvor, média: 10.0"; se a média for maior ou igual a 7.0 e menor que 10.0, apresente na tela: "Discente aprovado com média: "; 
-se a média for maior ou igual a 3.0  e menor que 7.0, apresente na tela: "Discente em exame com média: "; se a média for igual ou maior que 0 e menor que 3.0, apresente na 
-tela: "Discente reprovado com média: ";
-	Caso o aluno tenha ficado de exame, ele irá digitar sua nota na prova de exame, após fazer novamente a média o aluno tem que possuir média maior que 5.0, apresentando
-na tela a mensagem: "Discente aprovado com média: "; se ele possuir média menor que 5.0 apresente na tela a mensagem: "Discente reprovado com média: ". */
+/* Crie um programa na linguagem C que receba como entrada duas notas (0.0 <= n1, n2 <= 10) e calcule a média (m) dessas notas.
+Se m = 10, apresente a mensagem "Discente aprovado com louvou, média: 10.0". Se 7 <= m < 10, apresente a mensagem "Discente aprovado
+com média: " seguida da média calculada. Se 0 <= m < 3, apresente a mensagem "Discente reprovado com média: "seguida da média 
+calculada. Se 3 <= m < 7, apresente a mensagem "Discente em exame com média: " seguida da média calculada, então deve ser apresentada
+a seguinte mensagem "Digite a nota do exame: ". Se a divisão por 2 da soma da média com a nota do exame for maior que 5, apresente a 
+mensagem "Discente aprovado com média: " seguida de m, caso contrário, apresente a mensagem "Discente reprovado com média: " seguida
+do valor de m. Atenção, o valor da média armazenado em m deve ser apresentado com apenas um número após a vírgula. */
 
 #include <stdio.h>
 
