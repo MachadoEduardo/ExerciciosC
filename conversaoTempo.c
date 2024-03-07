@@ -1,4 +1,5 @@
 /* Crie um programa na linguagem C que receba como entrada um valor inteiro, que é o tempo de duração em segundos de um evento em uma fábrica, e informe-o expresso no formato "horas:minutos:segundos". */
+/* Beecrowd: Conversão de Tempo (1019) */
 
 #include <stdio.h>
 
