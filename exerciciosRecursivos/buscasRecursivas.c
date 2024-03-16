@@ -2,6 +2,24 @@
 #include <time.h>
 #include <stdlib.h>
 
+void funcaoSwap(int *x, int *y){
+    int aux;
+    aux = *x;
+    *x = *y;
+    *y = aux;
+}
+
+void bubbleSort(int *v, int ini, int fim){
+    int i, j;
+    for(i = ini; i <= fim; i++){
+        for(j = ini; j <= fim - i; j++){
+            if(v[j] > v[j + 1]){
+                funcaoSwap(&v[j], &v[j+1]);
+            }
+        }
+    }
+}
+
 int buscaSequencialRec(int *v, int ini, int fim, int k){
     if(v[ini] == k){
         return ini;
@@ -70,22 +88,28 @@ int main(void){
     srand(time(NULL));
 
     for( i = 0; i < n; i++){
-        vetor[i] = i+1;
+        vetor[i] = rand() % 10 + 1;
     }
 
     for( i = 0; i < n; i++){
         printf("%d ", vetor[i]);
     }
+    
+    bubbleSort(vetor, 0, n - 1);
+    printf("\n");
+    
+    for( i = 0; i < n; i++){
+        printf("%d ", vetor[i]);
+    }
 
-    int valor = rand() % n + 1;
+   /* int valor = rand() % n + 1;
 
     int posicao = buscaBinariaRec(vetor, 0, n - 1, n);
 
     if(posicao != -1)
         printf("\nvetor[%d] = %d\n", posicao, vetor[posicao]);
     else
-        printf("%d nao existe no vetor!\n", valor);
+        printf("%d nao existe no vetor!\n", valor); */
 
     return 0;
 }
-
